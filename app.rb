@@ -24,5 +24,6 @@ get '/bread' do
 end
 
 get  '/pasta' do
+  @name = ["Penne", "Conchiglie", "Farfalle"].sample
   erb(:index)
 end
