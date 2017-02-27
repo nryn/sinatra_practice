@@ -24,5 +24,5 @@ get '/bread' do
 end
 
 get  '/pasta' do
-  "<link rel='stylesheet' href='css/style.css'><img class='pasta-pic' src ='http://www.pasta-recipes.co/files2/term_desc/conchiglie.jpg'>"
+  erb(:index)
 end
