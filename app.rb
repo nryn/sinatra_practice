@@ -23,7 +23,19 @@ get '/bread' do
   "pretzel"
 end
 
-get  '/pasta' do
+get  '/random-pasta' do
   @name = ["Penne", "Conchiglie", "Farfalle"].sample
+  erb(:index)
+end
+
+get '/named-pasta' do
+  @name = params[:name]
+  p params[:name], params[:age]
+  erb(:index)
+end
+
+post '/saved-pasta' do
+  @name = params[:name]
+  p params[:name], params[:age]
   erb(:index)
 end

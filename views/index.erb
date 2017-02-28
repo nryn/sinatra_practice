@@ -1,2 +1,16 @@
-<link rel='stylesheet' href='css/style.css'><img class='pasta-pic' src ='http://www.pasta-recipes.co/files2/term_desc/conchiglie.jpg'>
+<link rel='stylesheet' href='css/style.css'>
+<meta>
+<div class='pasta-pic'>
+  <img src ='http://www.pasta-recipes.co/files2/term_desc/conchiglie.jpg'>
+</div>
 <h1> My name is <%= @name %> </h1>
+
+<% if !@name %>
+  <form action="/named-pasta">
+    <input type="text" name="name">
+    <input type="text" name="age">
+    <input type="submit" value="Submit"></input>
+  </form>
+<% else %>
+  <p>Welcome back.</p>
+<% end %>

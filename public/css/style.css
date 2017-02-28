@@ -3,3 +3,8 @@
   border-style: dashed solid dotted dashed;
   border-color: #ff2be9;
 }
+
+input {
+  color: pink;
+  width: 100px;
+}
